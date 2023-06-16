@@ -1,7 +1,9 @@
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class MainClass {
-    public static int getLocalNumber() {
-        return 14;
+    private int classNumber = 20;
+
+    public int getClassNumber() {
+        return classNumber;
     }
 }

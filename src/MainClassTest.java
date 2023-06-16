@@ -4,10 +4,10 @@ import org.junit.Test;
 public class MainClassTest {
 
     @Test
-    public void testGetLocalNumber() {
-        int expected = 14;
-        int actual = MainClass.getLocalNumber();
-        Assert.assertEquals("Число полученное из getLocalNumber не равняется " + expected,
-                expected, actual);
+    public void testGetClassNumber() {
+        int actual = new MainClass().getClassNumber();
+        int compareNumber = 45;
+        boolean greaterThan45 = actual > compareNumber;
+        Assert.assertTrue("Число полученное из getClassNumber меньше " + compareNumber, greaterThan45);
     }
 }
