@@ -4,10 +4,10 @@ import org.junit.Test;
 public class MainClassTest {
 
     @Test
-    public void testGetClassNumber() {
-        int actual = new MainClass().getClassNumber();
-        int compareNumber = 45;
-        boolean greaterThan45 = actual > compareNumber;
-        Assert.assertTrue("Число полученное из getClassNumber меньше " + compareNumber, greaterThan45);
+    public void testGetClassString() {
+        String actual = new MainClass().getClassString();
+        String containsString = "Hello";
+        boolean contains = actual.contains(containsString) || actual.contains(containsString.toLowerCase());
+        Assert.assertTrue("Строка не содержит " + containsString  + " и " + containsString.toLowerCase(), contains);
     }
 }
