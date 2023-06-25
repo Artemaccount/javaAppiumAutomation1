@@ -7,7 +7,8 @@ public class MainClassTest {
     public void testGetClassString() {
         String actual = new MainClass().getClassString();
         String containsString = "Hello";
-        boolean contains = actual.contains(containsString) || actual.contains(containsString.toLowerCase());
+        String containsLowerCase = "hello";
+        boolean contains = actual.contains(containsString) || actual.contains(containsLowerCase);
         Assert.assertTrue("Строка не содержит " + containsString  + " и " + containsString.toLowerCase(), contains);
     }
 }
